@@ -1,0 +1,17 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="assets/bi-ic-logo-bi-02.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm)">
+      <input type="text" id="login" class="fadeIn second" placeholder="login" formControlName="usuario">
+      <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" formControlName="contrasena">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+  </div>
+</div>
